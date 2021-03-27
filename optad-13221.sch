@@ -127,7 +127,7 @@ U 1 1 6048F161
 P 12400 3200
 F 0 "C4" V 12350 3100 50  0000 C CNN
 F 1 "1u" V 12350 3300 50  0000 C CNN
-F 2 "" H 12438 3050 50  0001 C CNN
+F 2 "optad-13221:C_SMD_AL" H 12438 3050 50  0001 C CNN
 F 3 "~" H 12400 3200 50  0001 C CNN
 	1    12400 3200
 	0    1    1    0   
@@ -138,7 +138,7 @@ U 1 1 6048FFFF
 P 12400 3500
 F 0 "C5" V 12350 3400 50  0000 C CNN
 F 1 "1u" V 12350 3600 50  0000 C CNN
-F 2 "" H 12438 3350 50  0001 C CNN
+F 2 "optad-13221:C_SMD_AL" H 12438 3350 50  0001 C CNN
 F 3 "~" H 12400 3500 50  0001 C CNN
 	1    12400 3500
 	0    1    1    0   
@@ -177,8 +177,6 @@ Wire Wire Line
 	12550 3200 12950 3200
 Wire Wire Line
 	12950 3200 12950 3600
-Wire Wire Line
-	12950 3200 13200 3200
 Connection ~ 12950 3200
 Wire Wire Line
 	12650 3900 12650 4000
@@ -207,47 +205,18 @@ F 3 "" H 12650 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12650 3500 13550 3500
-Text Notes 14150 3250 0    50   ~ 0
-LINE-L (white)
-Text Notes 14150 3500 0    50   ~ 0
-LINE-R (red)
-Wire Notes Line style solid
-	14150 3400 14150 3550
-Wire Notes Line style solid
-	14150 3550 14700 3550
-Wire Notes Line style solid
-	14700 3550 14700 3400
-Wire Notes Line style solid
-	14700 3400 14150 3400
-Wire Notes Line style solid
-	14150 3150 14150 3300
-Wire Notes Line style solid
-	14150 3300 14750 3300
-Wire Notes Line style solid
-	14750 3300 14750 3150
-Wire Notes Line style solid
-	14750 3150 14150 3150
+	12650 3500 13400 3500
 $Comp
 L power:Earth #PWR018
 U 1 1 604BA69B
-P 13750 3900
-F 0 "#PWR018" H 13750 3650 50  0001 C CNN
-F 1 "Earth" H 13750 3750 50  0001 C CNN
-F 2 "" H 13750 3900 50  0001 C CNN
-F 3 "~" H 13750 3900 50  0001 C CNN
-	1    13750 3900
+P 13350 4000
+F 0 "#PWR018" H 13350 3750 50  0001 C CNN
+F 1 "Earth" H 13350 3850 50  0001 C CNN
+F 2 "" H 13350 4000 50  0001 C CNN
+F 3 "~" H 13350 4000 50  0001 C CNN
+	1    13350 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13750 3900 13750 3800
-Wire Wire Line
-	13750 3800 13400 3800
-Wire Wire Line
-	13400 3800 13400 3400
-Connection ~ 13750 3800
-Wire Wire Line
-	13750 3800 13750 3700
 $Comp
 L power:GNDA #PWR046
 U 1 1 604D1A5A
@@ -2821,28 +2790,77 @@ Wire Notes Line style solid
 	6800 7200 6800 7000
 Wire Notes Line style solid
 	6800 7000 5650 7000
-$Comp
-L Connector:Conn_Coaxial J3
-U 1 1 604ADA60
-P 13750 3500
-F 0 "J3" H 13850 3475 50  0000 L CNN
-F 1 "Conn_Coaxial" H 13850 3384 50  0000 L CNN
-F 2 "" H 13750 3500 50  0001 C CNN
-F 3 " ~" H 13750 3500 50  0001 C CNN
-	1    13750 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_Coaxial J2
-U 1 1 604ACB0F
-P 13400 3200
-F 0 "J2" H 13500 3175 50  0000 L CNN
-F 1 "Conn_Coaxial" H 13500 3084 50  0000 L CNN
-F 2 "" H 13400 3200 50  0001 C CNN
-F 3 " ~" H 13400 3200 50  0001 C CNN
-	1    13400 3200
-	1    0    0    -1  
-$EndComp
 Text Notes 6650 10300 0    50   ~ 0
 Left Justified(FMT=H)
+$Comp
+L RCJ-041:RCJ-041 J2
+U 1 1 60688F9F
+P 13600 3300
+F 0 "J2" H 13300 3350 50  0000 R CNN
+F 1 "RCJ-043" H 13650 3500 50  0000 R CNN
+F 2 "optad-13221:CUI_RCJ-041" H 13600 3300 50  0001 L BNN
+F 3 "" H 13600 3300 50  0001 L BNN
+F 4 "RCJ-041" H 13600 3300 50  0001 L BNN "MP"
+F 5 "Unavailable" H 13600 3300 50  0001 L BNN "AVAILABILITY"
+F 6 "CUI Devices" H 13600 3300 50  0001 L BNN "MF"
+F 7 "None" H 13600 3300 50  0001 L BNN "PACKAGE"
+F 8 "Metal Right-Angle, RCA Jack, Black Housing and Insulation" H 13600 3300 50  0001 L BNN "DESCRIPTION"
+F 9 "None" H 13600 3300 50  0001 L BNN "PRICE"
+F 10 "https://www.cuidevices.com/product/interconnect/connectors/rca-connectors/rcj-04-series?utm_source=snapeda.com&utm_medium=referral&utm_campaign=snapedaBOM" H 13600 3300 50  0001 L BNN "CUI_PURCHASE_URL"
+	1    13600 3300
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	14700 3200 14100 3200
+Wire Notes Line style solid
+	14700 3350 14700 3200
+Wire Notes Line style solid
+	14100 3350 14700 3350
+Wire Notes Line style solid
+	14100 3200 14100 3350
+Wire Notes Line style solid
+	14650 3500 14100 3500
+Wire Notes Line style solid
+	14650 3650 14650 3500
+Wire Notes Line style solid
+	14100 3650 14650 3650
+Wire Notes Line style solid
+	14100 3500 14100 3650
+Text Notes 14100 3600 0    50   ~ 0
+LINE-R (red)
+Text Notes 14100 3300 0    50   ~ 0
+LINE-L (white)
+$Comp
+L RCJ-041:RCJ-041 J3
+U 1 1 6068AAA9
+P 13600 3600
+F 0 "J3" H 13300 3650 50  0000 R CNN
+F 1 "RCJ-042" H 13650 3400 50  0000 R CNN
+F 2 "optad-13221:CUI_RCJ-041" H 13600 3600 50  0001 L BNN
+F 3 "" H 13600 3600 50  0001 L BNN
+F 4 "RCJ-041" H 13600 3600 50  0001 L BNN "MP"
+F 5 "Unavailable" H 13600 3600 50  0001 L BNN "AVAILABILITY"
+F 6 "CUI Devices" H 13600 3600 50  0001 L BNN "MF"
+F 7 "None" H 13600 3600 50  0001 L BNN "PACKAGE"
+F 8 "Metal Right-Angle, RCA Jack, Black Housing and Insulation" H 13600 3600 50  0001 L BNN "DESCRIPTION"
+F 9 "None" H 13600 3600 50  0001 L BNN "PRICE"
+F 10 "https://www.cuidevices.com/product/interconnect/connectors/rca-connectors/rcj-04-series?utm_source=snapeda.com&utm_medium=referral&utm_campaign=snapedaBOM" H 13600 3600 50  0001 L BNN "CUI_PURCHASE_URL"
+	1    13600 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12950 3200 13400 3200
+Wire Wire Line
+	13400 3700 13350 3700
+Wire Wire Line
+	13400 3400 13250 3400
+Wire Wire Line
+	13350 3700 13350 3900
+Wire Wire Line
+	13250 3900 13350 3900
+Wire Wire Line
+	13250 3400 13250 3900
+Connection ~ 13350 3900
+Wire Wire Line
+	13350 3900 13350 4000
 $EndSCHEMATC
